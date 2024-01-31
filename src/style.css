@@ -1,0 +1,205 @@
+/****** Generic types ******/
+
+body {
+	margin:0;
+	
+	background-color: black;
+	color: white;
+    
+	font-family: "Lucida Console", Monaco, monospace;
+    line-height: 1.45em;
+}
+
+table {	
+	width: 1100px;
+	margin: 0 auto;	
+	margin-bottom: 20px;
+	
+	text-align: center;
+}
+
+th, td {
+	border: 1px solid;
+}
+
+th {
+	background-color: rgb(30, 30, 55);
+}
+
+td:nth-child(1) {
+	width: 70px;
+}
+
+td:nth-child(3) {
+	width: 300px;
+}
+
+tr:nth-child(even) {
+	background-color: rgb(21, 21, 21);
+}
+
+tr:nth-child(odd) {
+	background-color: rgb(35, 35, 35);
+}
+
+tr {
+	height: 80px;
+}
+
+/****** Navigation bar (menu) ******/
+
+.navbar {
+	position: fixed;
+	left: 0;
+    top: 0;
+	z-index: 1;
+	
+	margin:0;
+	width: 100%;
+	height: auto;
+	
+	background-color: rgb(24,24,24); 
+	box-shadow: 0px 2px 3px rgba(0,0,0,.4);
+	list-style: none;
+}
+
+.navbar li {
+	float:left;
+	padding: 17px 18px;
+	display: inline-block;
+	
+	text-align: center;
+}
+
+.navbar a {
+    color: grey;
+	
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+	color: white;
+	
+}
+
+/****** Main content ******/
+
+.main-content {
+	margin-top: 12%;
+	margin-bottom: 4%;
+	margin-left: 10%;
+	margin-right: 10%;
+	
+	text-align: left;
+	font-size: 1.20em;
+}
+
+.main-content h2 {
+	margin-bottom: 50px;
+	
+	text-align: center;
+}
+
+.container {
+	width: 900px;
+	margin: 0 auto;
+	height: auto;
+	border: 2px solid rgb(36, 36, 36);
+	padding: 50px;
+}
+
+.container button {
+	float: right;
+	padding: 4px 15px;
+	
+	color: white;
+	background-color: rgb(49, 49, 49);
+	cursor: pointer;
+}
+
+.container button:hover {
+	opacity: 0.8;
+}
+
+.container select {
+	width: 100%;
+	background-color: lightgrey;
+}
+
+.container-medium {
+	width: 550px;
+	margin: 0 auto;
+	height: auto;
+	border: 2px solid rgb(36, 36, 36);
+	padding: 50px;
+}
+
+input, textarea {
+	float: right;
+}
+
+textarea {
+	resize: none;
+	width: 600px;
+	height: 180px;
+	margin-bottom: 100px;
+	padding-bottom: 100px;
+	margin-left:100px;
+}
+
+option[selected] {
+    background-color: white;
+    font-weight: bold;
+}
+
+/****** Login container ******/
+
+.login-container {
+	width: 280px;
+	margin: 0 auto;
+	height: auto;
+	border: 2px solid rgb(36, 36, 36);
+	padding: 50px;
+}
+
+input[type=text], input[type=password], input[type=number] {
+	width: 61.5%;
+}
+
+input[type=date] {
+	width: 600px;
+}
+
+button {
+	float: right;
+	padding: 4px 15px;
+	
+	color: white;
+	background-color: rgb(49, 49, 49);
+	cursor: pointer;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+.login-container input {
+	float: right;
+}
+
+/****** Footer ******/
+
+.footer {
+	margin-top: 80px;
+	margin-bottom: 120px;
+	
+	text-align: center;
+	font-size: 9pt;
+}
+
+@media (max-width: 768px) {
+    div.event {
+        width: 100%;
+    }
+}
+
